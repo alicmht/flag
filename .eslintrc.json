@@ -1,0 +1,56 @@
+{
+  "env": { "es2021": true, "node": true, "browser": true },
+  "plugins": [
+    "prettier",
+    "simple-import-sort",
+    "unicorn"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": false, "semi": true, "jsxSingleQuote": false },
+      { "usePrettierrc": true }
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "no-console": "off",
+    "no-alert": "error",
+    "no-empty": "error",
+    "no-implicit-coercion": "error",
+    "no-underscore-dangle": "off",
+    "no-var": "warn",
+    "no-void": "off",
+    "no-empty-function": "warn",
+    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "no-mixed-operators": "error",
+    "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }],
+    "react-hooks/exhaustive-deps": "warn",
+    "react/function-component-definition": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "no-param-reassign": ["error", { "props": false }],
+    "sort-imports": "off",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/no-unstable-nested-components": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+
+    "jsx-a11y/no-noninteractive-tabindex": [
+      "error",
+      { "tags": ["div"], "roles": ["tabpanel"] }
+    ]
+  }
+}
